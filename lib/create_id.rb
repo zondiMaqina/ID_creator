@@ -1,5 +1,5 @@
-# class implementation
-class Details
+# class implementation for laying out details of individual
+class CreateId
   attr_reader :names, :surname, :sex, :nationality, :race, :status, :id_number
 
   def initialize(names, surname, sex, nationality)
