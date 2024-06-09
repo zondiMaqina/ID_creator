@@ -4,15 +4,15 @@ class CreateId
 
   def initialize(names, surname, sex, nationality)
     @names = names.split(' ').map(&:capitalize)
-    @surname = surname
-    @sex = sex
-    @nationality = nationality
+    @surname = surname.capitalize
+    @sex = sex.capitalize
+    @nationality = nationality.capitalize
     puts "all is well #{@names}"
   end
 
   def personal_info(race, status, id_number)
-    @race = race
-    @status = status
+    @race = race.capitalize
+    @status = status.capitalize
     @id_number = id_number
   end
 end
