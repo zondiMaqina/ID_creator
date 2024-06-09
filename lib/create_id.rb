@@ -17,7 +17,7 @@ class CreateId
 
   def self.generate_id
     puts ' ---------------------------------------------'
-    puts "|  Names: #{@names[0]} #{@names[1]}           |" 
+    puts "|  Names: #{@names[0]} #{@names[1]}           |"
     puts "|  Surname: #{@surname}                       |"
     puts "|  Sex: #{@sex}                               |"
     puts "|  Race: #{@race}                             |"
