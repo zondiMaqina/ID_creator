@@ -49,13 +49,22 @@ class RecieveInfo
     individual_info
   end
 
+  def id_number
+    puts "\nPlease enter your ID number"
+    id_number = gets.chomp.gsub(' ', '')
+    until id_number.length == 13
+      puts "\nPlease enter a valid ID number"
+      status = gets.chomp.downcase
+    end
+    status
+  end
+
   def individual_info
     puts "\nPERSONAL DETAILS"
     puts 'Please enter your race'
     race = gets.chomp
     relationship_status = status
-    puts "\nPlease enter your ID number"
-    id_number = gets.chomp
-    CreateId.personal_info(race, relationship_status, id_number)
+    number = id_number
+    CreateId.personal_info(race, relationship_status, number)
   end
 end
