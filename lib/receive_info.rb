@@ -3,7 +3,7 @@ require_relative 'create_id'
 class RecieveInfo
   def initialize
     super
-    puts 'WELCOME USER!!! LET US CREATE YOUR INFORMATION IDENTITY (I.D), eneter some details below'
+    puts 'WELCOME USER!!! LET US CREATE YOUR INFORMATION IDENTITY (I.D), Enter some details below'
     basic_info
   end
 
@@ -26,6 +26,7 @@ class RecieveInfo
       puts "\nplease enter male/female"
       sex = gets.chomp
     end
+    sex
   end
 
   def nationality
@@ -33,7 +34,28 @@ class RecieveInfo
     gets.chomp
   end
 
+  def status
+    puts 'Please enter your status'
+    status = gets.chomp.downcase
+    until status.include?('single') || status.include?('married')
+      puts "\nPlease enter single/married"
+      status = gets.chomp.downcase
+    end
+    status
+  end
+
   def basic_info
     CreateId.new(names, surname, sex, nationality)
+    individual_info
+  end
+
+  def individual_info
+    puts "\nPERSONAL DETAILS"
+    puts 'Please enter your race'
+    race = gets.chomp
+    relationship_status = status
+    puts "\nPlease enter your ID number"
+    id_number = gets.chomp
+    CreateId.personal_info(race, relationship_status, id_number)
   end
 end
