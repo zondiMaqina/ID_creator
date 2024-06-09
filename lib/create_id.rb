@@ -7,12 +7,17 @@ class CreateId
     @surname = surname.capitalize
     @sex = sex.capitalize
     @nationality = nationality.capitalize
-    puts "all is well #{@names}"
   end
 
   def self.personal_info(race, status, id_number)
     @race = race.capitalize
     @status = status.capitalize
     @id_number = id_number
+  end
+
+  private
+
+  def generate_id
+
   end
 end
