@@ -10,9 +10,10 @@ class CreateId
     puts "all is well #{@names}"
   end
 
-  def personal_info(race, status, id_number)
+  def self.personal_info(race, status, id_number)
     @race = race.capitalize
     @status = status.capitalize
     @id_number = id_number
+    puts @race
   end
 end
