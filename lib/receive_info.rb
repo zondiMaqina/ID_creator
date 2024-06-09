@@ -15,21 +15,21 @@ class RecieveInfo
   end
 
   def surname
-    puts 'Please enter your surname'
+    puts "\nPlease enter your surname"
     gets.chomp
   end
 
   def sex
-    puts 'please enter your gender male/female'
+    puts "\nplease enter your gender male/female"
     sex = gets.chomp
     until sex.include?('male') || sex.include?('female')
-      puts 'please enter male/female'
+      puts "\nplease enter male/female"
       sex = gets.chomp
     end
   end
 
   def nationality
-    puts 'Please eneter your nationality'
+    puts "\nPlease eneter your nationality"
     gets.chomp
   end
 
