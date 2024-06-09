@@ -15,9 +15,14 @@ class CreateId
     @id_number = id_number
   end
 
-  private
-
-  def generate_id
-
+  def self.generate_id
+    puts ' ---------------------------------------------'
+    puts "|  Names: #{@names[0]} #{@names[1]}           |" 
+    puts "|  Surname: #{@surname}                       |"
+    puts "|  Sex: #{@sex}                               |"
+    puts "|  Race: #{@race}                             |"
+    puts "|  Status: #{@status}                         |"
+    puts "|  Identity number: #{@id_number}             |"
+    puts ' ---------------------------------------------'
   end
 end
