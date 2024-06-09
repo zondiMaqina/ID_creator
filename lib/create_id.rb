@@ -14,6 +14,5 @@ class CreateId
     @race = race.capitalize
     @status = status.capitalize
     @id_number = id_number
-    puts @race
   end
 end
