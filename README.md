@@ -20,7 +20,31 @@
 3. **./lib/color.rb** => adding color to program on terminal
 4. **.lib/create_id** => prints layout of id
 
-## Development
+## Challenges and Development
 
 > This project will help me get familier with using the extension RUBY LSP and the linter rubocop
 > I will be familier with using gems for a program and bundle to manage those dependencies
+
+It turns out that you can instantiate an obj in another class
+
+1. How to use ```super``` method in ruby and what it is for
+
+> It is a keyword used to call a method from the parent class with the same name from the child class
+> That parent class method will be envoked if the child class method is called out
+
+```
+class Parent
+  def greet
+    puts "Hello from Parent"
+  end
+end
+
+class Child < Parent  # link the two classes
+  def say_hello
+    super()  # Calling the parent class's greet method
+  end
+end
+
+child = Child.new
+child.say_hello  # call out the child method first
+```
