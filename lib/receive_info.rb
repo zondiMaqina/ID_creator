@@ -54,9 +54,9 @@ class RecieveInfo
     id_number = gets.chomp.gsub(' ', '')
     until id_number.length == 13
       puts "\nPlease enter a valid ID number"
-      status = gets.chomp.downcase
+      id_number = gets.chomp.downcase
     end
-    status
+    id_number
   end
 
   def individual_info
