@@ -1,0 +1,1 @@
+# class implementation for recievng info from individual
