@@ -17,14 +17,14 @@ class CreateId
   end
 
   def generate_id
-    print "\n-----------------------------------------------------\n"
-    print "|  Names: #{@names[0]} #{@names[1]}\n"
-    print "|  Surname: #{@surname}\n"
-    print "|  Sex: #{@sex}\n"
-    print "|  Race: #{@race} \n"
-    print "|  Nationality: #{@nationality}\n"
-    print "|  Realtionship Status: #{@status}\n"
-    print "|  Identity number: #{@id_number}\n"
+    print "\n-----------------------------------------------------\n".colorize()
+    print "|  Names: #{@names[0].colorize(:light_blue)} #{@names[1].colorize(:light_blue)}\n"
+    print "|  Surname: #{@surname.colorize(:light_blue)}\n"
+    print "|  Sex: #{@sex.colorize(:light_blue)}\n"
+    print "|  Race: #{@race.colorize(:light_blue)}\n"
+    print "|  Nationality: #{@nationality.colorize(:light_blue)}\n"
+    print "|  Realtionship Status: #{@status.colorize(:light_blue)}\n"
+    print "|  Identity number: #{@id_number.colorize(:light_blue)}\n"
     print " -----------------------------------------------------\n"
   end
 end
