@@ -1,3 +1,4 @@
+require 'colorize'
 # class implementation for laying out details of individual
 class CreateId
   attr_reader :names, :surname, :sex, :nationality, :race, :status, :id_number
