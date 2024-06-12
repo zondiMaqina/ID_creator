@@ -33,6 +33,7 @@
 
 > It is a keyword used to call a method from the parent class with the same name from the child class
 > That parent class method will be envoked if the child class method is called out
+> To access installed gems use ```require``` method that fetches it from absolute path
 
 ```
 class Parent
