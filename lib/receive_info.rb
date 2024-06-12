@@ -44,11 +44,6 @@ class RecieveInfo
     status
   end
 
-  def basic_info
-    CreateId.new(names, surname, sex, nationality)
-    individual_info
-  end
-
   def id_number
     puts "\nPlease enter your ID number"
     id_number = gets.chomp.gsub(' ', '')
@@ -59,12 +54,26 @@ class RecieveInfo
     id_number
   end
 
-  def individual_info
-    puts "\nPERSONAL DETAILS"
+  def race
     puts 'Please enter your race'
     race = gets.chomp
-    relationship_status = status
-    number = id_number
-    CreateId.personal_info(race, relationship_status, number)
+
+    until race.downcase == 'male' || race.downcase == 'female'
+      puts 'Please enter your race => black/white'
+      race = gets.chomp
+    end
+    race
+  end
+
+  def individual_info
+    puts "\nPERSONAL DETAILS"
+    race
+  end
+
+  def basic_info
+    minor_details = CreateId.new(names, surname, sex, nationality)
+    minor_details.personal_info(individual_info, status, id_number)
   end
 end
+
+# use objects to give the createId class its arguments
