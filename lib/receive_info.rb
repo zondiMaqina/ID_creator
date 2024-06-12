@@ -1,4 +1,5 @@
 require_relative 'create_id'
+require 'colorize'
 # class implementation for recievng info from individual
 class RecieveInfo
   def initialize
