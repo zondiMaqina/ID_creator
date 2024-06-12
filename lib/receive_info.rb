@@ -35,7 +35,7 @@ class RecieveInfo
   end
 
   def status
-    puts 'Please enter your status'
+    puts 'Please enter your relationship status'
     status = gets.chomp.downcase
     until status.include?('single') || status.include?('married')
       puts "\nPlease enter single/married"
