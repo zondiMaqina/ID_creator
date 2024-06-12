@@ -22,11 +22,12 @@
 
 ## Challenges and Development
 
-> This project will help me get familier with using the extension RUBY LSP and the linter rubocop
-> I will be familier with using gems for a program and bundle to manage those dependencies
+> This project will help me get familier with using the extension ```RUBY LSP``` and the linter ```rubocop```
+> I will be familier with using gems for a program and ```bundler``` to manage those dependencies
 
 > [x] It turns out that you can instantiate an obj in another class
 > [x] You can use a class method in another method too
+> [x] Calling out a class method instantiates a new object
 
 1. How to use ```super``` method in ruby and what it is for
 
