@@ -9,20 +9,22 @@ class CreateId
     @nationality = nationality.capitalize
   end
 
-  def self.personal_info(race, status, id_number)
+  def personal_info(race, status, id_number)
     @race = race.capitalize
     @status = status.capitalize
     @id_number = id_number
+    generate_id
   end
 
-  def self.generate_id
-    puts ' ---------------------------------------------'
-    puts "|  Names: #{@names[0]} #{@names[1]}           |"
-    puts "|  Surname: #{@surname}                       |"
-    puts "|  Sex: #{@sex}                               |"
-    puts "|  Race: #{@race}                             |"
-    puts "|  Status: #{@status}                         |"
-    puts "|  Identity number: #{@id_number}             |"
-    puts ' ---------------------------------------------'
+  def generate_id
+    print "\n-----------------------------------------------------\n"
+    print "|  Names: #{@names}\n"
+    print "|  Surname: #{@surname}\n"
+    print "|  Sex: #{@sex}\n"
+    print "|  Race: #{@race} \n"
+    print "|  Nationality: #{@nationality}\n"
+    print "|  Status: #{@status}\n"
+    print "|  Identity number: #{@id_number}\n"
+    print " -----------------------------------------------------\n"
   end
 end
