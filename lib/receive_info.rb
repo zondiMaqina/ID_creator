@@ -58,7 +58,7 @@ class RecieveInfo
     puts 'Please enter your race'
     race = gets.chomp
 
-    until race.downcase == 'male' || race.downcase == 'female'
+    until race.downcase == 'black' || race.downcase == 'white'
       puts 'Please enter your race => black/white'
       race = gets.chomp
     end
