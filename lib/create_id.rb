@@ -18,12 +18,12 @@ class CreateId
 
   def generate_id
     print "\n-----------------------------------------------------\n"
-    print "|  Names: #{@names}\n"
+    print "|  Names: #{@names[0]} #{@names[1]}\n"
     print "|  Surname: #{@surname}\n"
     print "|  Sex: #{@sex}\n"
     print "|  Race: #{@race} \n"
     print "|  Nationality: #{@nationality}\n"
-    print "|  Status: #{@status}\n"
+    print "|  Realtionship Status: #{@status}\n"
     print "|  Identity number: #{@id_number}\n"
     print " -----------------------------------------------------\n"
   end
